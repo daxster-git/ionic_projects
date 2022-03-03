@@ -13,6 +13,12 @@ export class TimerComponent {
     }, 1000)
   }
   time = this.new_time.get_time();
+
+  new_reminder: string = '';
+  public add_reminder() {
+    let reminder = this.new_reminder;
+    return reminder;
+  }
 }
 
 class system_time {

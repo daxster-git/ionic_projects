@@ -3,7 +3,9 @@
     <p class="baloo" style="font-size: 20px; padding-right: 15px; padding-left: 7px;">Current Time: {{ time }}</p>
   </div>
   <div style="display: flex; width: 40%; border-style: solid; border-width: thin; border-color: white;">
-    <ion-input placeholder="Reminder Time"></ion-input>
-    <ion-button color="dark" fill="clear"> Submit Time</ion-button>
+    <ion-input placeholder="Reminder Time" clearInput="true" [(ngModel)]="new_reminder"></ion-input>
+    <ion-button color="dark" fill="clear" (click)="add_reminder()"> Submit Time</ion-button>
+    <p>{{ reminder }}</p>
   </div>
+  <ion-button href="/home" fill="clear" color="dark">Go Back</ion-button>
 </ion-content>

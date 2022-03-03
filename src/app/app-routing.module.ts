@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./timer/timer.module').then( m => m.TimerModule)
   },
   {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
